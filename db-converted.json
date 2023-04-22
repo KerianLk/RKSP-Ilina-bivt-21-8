@@ -1,0 +1,176 @@
+{
+    "books": {
+        "book": [
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            },
+            {
+                "name": {
+                    "_text": "Зелёная миля"
+                },
+                "auther": {
+                    "_text": "Стивен Кинг"
+                },
+                "release_year": {
+                    "_text": "2014"
+                },
+                "genre": {
+                    "_text": "Ужасы"
+                },
+                "number_of_pages": {
+                    "_text": "384"
+                }
+            }
+        ]
+    }
+}
