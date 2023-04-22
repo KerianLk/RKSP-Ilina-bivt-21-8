@@ -1,4 +1,4 @@
-import { Parser } from "./parser";
+import { convertJsonToXml } from "./parser";
 import { Book } from "./book";
 import xml from "xml";
 import { writeFileSync } from "fs";
@@ -23,9 +23,7 @@ function create_source_file(path: string): void {
 
 create_source_file('./db.json')
 
-let prs = new Parser;
-let data = prs.get_json('./db.json');
-prs.to_xml('./db.xml', './db.json');
+convertJsonToXml()
 
 
 

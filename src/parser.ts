@@ -1,13 +1,13 @@
 import { promisify } from "util";
-import { readFileSync, writeFileSync } from "fs";
+import { readFile, writeFile } from "fs";
 import xml from "xml";
-import { Book } from "./book";
-export const fs = require('fs');
-export class Parser{
 
-    get_json(path: string){
-  return JSON.parse(
-    fs.readFileSync(path)
+const readFilePromise = promisify(readFile);
+const writeFilePromise = promisify(writeFile);
+
+export async function convertJsonToXml() {
+  const books = JSON.parse(
+    await readFilePromise("./db.json", "utf8")
   ) as [
     {
       name: string;
@@ -17,12 +17,11 @@ export class Parser{
       number_of_pages: number
     }
   ];
-}
-to_xml(path:string, source: string){
+
   const xml_books = [
     {
       books: [
-        this.get_json(source).map((item) => {
+        books.map((item) => {
           return {
             book: [
               {
@@ -40,7 +39,9 @@ to_xml(path:string, source: string){
       ],
     },
   ];
+
   const xml_string = xml(xml_books);
-  fs.writeFileSync(path, xml_string, "utf8");
+  await writeFilePromise("data.xml", xml_string, "utf8");
 }
-}
+
+
