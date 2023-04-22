@@ -1,36 +1,46 @@
-import { xml2json, json2xml } from 'xml-js';
-import { readFileSync } from 'fs';
+import { promisify } from "util";
+import { readFileSync, writeFileSync } from "fs";
+import xml from "xml";
+import { Book } from "./book";
+export const fs = require('fs');
+export class Parser{
 
-interface IXMLParse {
-    XMLParseRaw(doc:string): string
-}
-interface IXMLParseFromFile {
-    XMLParseFromFile(path:string): string
-}
-interface IJsonParse {
-    JsonParseRaw(doc:string): string
-}
-interface IJsonParseFromFile {
-    JsonParseFromFile(path:string): string
-}
-
-export class JsonParser implements IXMLParse, IXMLParseFromFile {
-    XMLParseFromFile(path:string): string {
-        let data = readFileSync(path, 'utf-8');
-        return this.XMLParseRaw(data)
+    get_json(path: string){
+  return JSON.parse(
+    fs.readFileSync(path)
+  ) as [
+    {
+      name: string;
+      author: string;
+      release_year: number;
+      genre: string;
+      number_of_pages: number
     }
-    XMLParseRaw(doc:string): string {
-        return xml2json(doc, {compact: true, spaces: 4})
-    }
-
+  ];
 }
-export class XMLParser implements IJsonParse, IJsonParseFromFile {
-    JsonParseFromFile(path:string): string {
-        let data: string = readFileSync(path, 'utf-8');
-        return this.JsonParseRaw(data)
-    }
-    JsonParseRaw(doc: string): string {
-        return json2xml(doc)
-    }
-
+to_xml(path:string, source: string){
+  const xml_books = [
+    {
+      books: [
+        this.get_json(source).map((item) => {
+          return {
+            book: [
+              {
+                _attr: {
+                    author: item.author,
+                    release_year: item.release_year,
+                    genre: item.genre,
+                    number_of_pages: item.number_of_pages
+                },
+              },
+              item.name,
+            ],
+          };
+        }),
+      ],
+    },
+  ];
+  const xml_string = xml(xml_books);
+  fs.writeFileSync(path, xml_string, "utf8");
+}
 }
