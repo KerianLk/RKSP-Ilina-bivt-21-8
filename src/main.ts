@@ -1,10 +1,9 @@
 import { XMLParser } from './parser'
-
-const fs = require('fs');
+import fs from 'fs';
 
 const xml_parser: XMLParser = new XMLParser()
-let xml_doc = xml_parser.JsonParseFromFile('db.json')
-console.log(xml_doc)
-fs.writeFileSync('data.xml', xml_doc)
+let data = xml_parser.JsonParseFromFile('db.json')
+console.log(data)
+fs.writeFileSync('data.xml', data)
 
 
