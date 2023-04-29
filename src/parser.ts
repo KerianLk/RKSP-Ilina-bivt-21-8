@@ -1,47 +1,22 @@
-import { promisify } from "util";
-import { readFile, writeFile } from "fs";
-import xml from "xml";
+import { json2xml } from 'xml-js';
+import { readFileSync } from 'fs';
 
-const readFilePromise = promisify(readFile);
-const writeFilePromise = promisify(writeFile);
 
-export async function convertJsonToXml() {
-  const books = JSON.parse(
-    await readFilePromise("./db.json", "utf8")
-  ) as [
-    {
-      name: string;
-      author: string;
-      release_year: number;
-      genre: string;
-      number_of_pages: number
-    }
-  ];
-
-  const xml_books = [
-    {
-      books: [
-        books.map((item) => {
-          return {
-            book: [
-              {
-                _attr: {
-                    author: item.author,
-                    release_year: item.release_year,
-                    genre: item.genre,
-                    number_of_pages: item.number_of_pages
-                },
-              },
-              item.name,
-            ],
-          };
-        }),
-      ],
-    },
-  ];
-
-  const xml_string = xml(xml_books);
-  await writeFilePromise("data.xml", xml_string, "utf8");
+interface IJsonParse {
+    JsonParseRaw(doc:string): string
+}
+interface IJsonParseFromFile {
+    JsonParseFromFile(path:string): string
 }
 
+export class XMLParser implements IJsonParse, IJsonParseFromFile {
+    JsonParseFromFile(path:string): string {
+        let data:string = readFileSync(path, 'utf-8');
+        return this.JsonParseRaw(data)
+    }
+    JsonParseRaw(doc: string): string {
+        return json2xml(doc, {compact: true})
+    }
+
+}
 
