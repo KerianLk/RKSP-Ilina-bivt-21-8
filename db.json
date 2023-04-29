@@ -21,45 +21,66 @@
       "number_of_pages": 384
     },
     {
-      "name": "Зелёная миля",
-      "author": "Стивен Кинг",
-      "genre": "Ужасы",
-      "release_year": 2014,
-      "number_of_pages": 384
+      "name": "Лекарство для мисс Марпл",
+      "author": "Агата Кристи",
+      "genre": "Детективы",
+      "release_year": 1942,
+      "number_of_pages": 40
     },
     {
-      "name": "Зелёная миля",
-      "author": "Стивен Кинг",
-      "genre": "Ужасы",
-      "release_year": 2014,
-      "number_of_pages": 384
+      "name": "The Tent",
+      "author": "Маргарет Этвуд",
+      "genre": "Рассказы",
+      "release_year": 2006,
+      "number_of_pages": 178
     },
     {
-      "name": "Зелёная миля",
-      "author": "Стивен Кинг",
-      "genre": "Ужасы",
-      "release_year": 2014,
-      "number_of_pages": 384
+      "name": "О мышах и людях",
+      "author": "Джон Стейнбек",
+      "genre": "Повести",
+      "release_year": 1937,
+      "number_of_pages": 3107
     },
     {
-      "name": "Зелёная миля",
-      "author": "Стивен Кинг",
-      "genre": "Ужасы",
-      "release_year": 2014,
-      "number_of_pages": 384
+      "name": "Трость",
+      "author": "Жан Тумер",
+      "genre": "Романы",
+      "release_year": 1923,
+      "number_of_pages": 158
     },
     {
-      "name": "Зелёная миля",
-      "author": "Стивен Кинг",
-      "genre": "Ужасы",
-      "release_year": 2014,
-      "number_of_pages": 384
+      "name": "Голод",
+      "author": "Кнут Гамсун",
+      "genre": "Романы",
+      "release_year": 1890,
+      "number_of_pages": 158
     },
     {
-      "name": "Зелёная миля",
-      "author": "Стивен Кинг",
-      "genre": "Ужасы",
-      "release_year": 2014,
-      "number_of_pages": 384
+      "name": "Завтрак у Тиффани",
+      "author": "Трумэн Капоте",
+      "genre": "Романы",
+      "release_year": 1958,
+      "number_of_pages": 179
+    },
+    {
+      "name": "Собака Баскервилей",
+      "author": "Сэр Артур Конан Дойль",
+      "genre": "Детективы",
+      "release_year": 1902,
+      "number_of_pages": 112
+    },
+    {
+      "name": "Вещи рушатся",
+      "author": "Чинуа Ачебе",
+      "genre": "Романы",
+      "release_year": 1958,
+      "number_of_pages": 181
+    },
+    {
+      "name": "Дом, из рассвета сотворённый",
+      "author": "Н. Скотт Момадей",
+      "genre": "Романы",
+      "release_year": 1968,
+      "number_of_pages": 185
     }
   ]

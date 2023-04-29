@@ -1,5 +1,3 @@
-
-import { writeFileSync } from 'fs'
 import { XMLParser } from './parser'
 
 const fs = require('fs');

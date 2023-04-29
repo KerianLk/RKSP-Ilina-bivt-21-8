@@ -15,8 +15,7 @@ export class XMLParser implements IJsonParse, IJsonParseFromFile {
         return this.JsonParseRaw(data)
     }
     JsonParseRaw(doc: string): string {
-        return json2xml(doc, {compact: true})
+        return json2xml(doc, {compact:true, spaces: 5})
     }
-
 }
 
