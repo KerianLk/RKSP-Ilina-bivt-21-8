@@ -1,84 +1,84 @@
-<0>
+<Book>
      <name>Зелёная миля</name>
      <author>Стивен Кинг</author>
      <genre>Ужасы</genre>
      <release_year>2014</release_year>
      <number_of_pages>384</number_of_pages>
-</0>
-<1>
+</Book>
+<Book>
      <name>Гарри Поттер и Дары Смерти</name>
      <author>Джоан Роулинг</author>
      <genre>Фэнтези</genre>
      <release_year>2003</release_year>
      <number_of_pages>544</number_of_pages>
-</1>
-<2>
+</Book>
+<Book>
      <name>Зелёная миля</name>
      <author>Стивен Кинг</author>
      <genre>Ужасы</genre>
      <release_year>2014</release_year>
      <number_of_pages>384</number_of_pages>
-</2>
-<3>
+</Book>
+<Book>
      <name>Лекарство для мисс Марпл</name>
      <author>Агата Кристи</author>
      <genre>Детективы</genre>
      <release_year>1942</release_year>
      <number_of_pages>40</number_of_pages>
-</3>
-<4>
+</Book>
+<Book>
      <name>The Tent</name>
      <author>Маргарет Этвуд</author>
      <genre>Рассказы</genre>
      <release_year>2006</release_year>
      <number_of_pages>178</number_of_pages>
-</4>
-<5>
+</Book>
+<Book>
      <name>О мышах и людях</name>
      <author>Джон Стейнбек</author>
      <genre>Повести</genre>
      <release_year>1937</release_year>
      <number_of_pages>3107</number_of_pages>
-</5>
-<6>
+</Book>
+<Book>
      <name>Трость</name>
      <author>Жан Тумер</author>
      <genre>Романы</genre>
      <release_year>1923</release_year>
      <number_of_pages>158</number_of_pages>
-</6>
-<7>
+</Book>
+<Book>
      <name>Голод</name>
      <author>Кнут Гамсун</author>
      <genre>Романы</genre>
      <release_year>1890</release_year>
      <number_of_pages>158</number_of_pages>
-</7>
-<8>
+</Book>
+<Book>
      <name>Завтрак у Тиффани</name>
      <author>Трумэн Капоте</author>
      <genre>Романы</genre>
      <release_year>1958</release_year>
      <number_of_pages>179</number_of_pages>
-</8>
-<9>
+</Book>
+<Book>
      <name>Собака Баскервилей</name>
      <author>Сэр Артур Конан Дойль</author>
      <genre>Детективы</genre>
      <release_year>1902</release_year>
      <number_of_pages>112</number_of_pages>
-</9>
-<10>
+</Book>
+<Book>
      <name>Вещи рушатся</name>
      <author>Чинуа Ачебе</author>
      <genre>Романы</genre>
      <release_year>1958</release_year>
      <number_of_pages>181</number_of_pages>
-</10>
-<11>
+</Book>
+<Book>
      <name>Дом, из рассвета сотворённый</name>
      <author>Н. Скотт Момадей</author>
      <genre>Романы</genre>
      <release_year>1968</release_year>
      <number_of_pages>185</number_of_pages>
-</11>
+</Book>
